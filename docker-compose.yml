@@ -1,6 +1,7 @@
 services:
   dog-backend:
-    build: .
+    build:
+      context: ./app
     container_name: dog-backend
     env_file:
       - .env_example
